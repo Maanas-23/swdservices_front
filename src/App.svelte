@@ -4,6 +4,8 @@
   import Logo from "./img/DVM-Logo.svg";
   let curr: number = 0;
   let currWebsite: WebsiteType = websites[curr];
+  let touchstartX: number;
+  let touchendX: number;
 
   function autoUpdate() {
     setTimeout(() => {
@@ -21,6 +23,19 @@
       curr = 0;
     }
     currWebsite = websites[curr];
+  }
+
+  function touchstartHandler(evt: TouchEvent) {
+    touchstartX = evt.changedTouches[0].screenX;
+  }
+
+  function touchendHandler(evt: TouchEvent) {
+    touchendX = evt.changedTouches[0].screenX;
+    if (touchendX > touchstartX) {
+      setCurr(curr - 1);
+    } else if (touchendX < touchstartX) {
+      setCurr(curr + 1);
+    }
   }
 </script>
 
@@ -50,7 +65,10 @@
 	C236.878,322.03,238.221,312.628,233.25,306.001z"></path>
       </svg>
     </button>
-    <div class="card-cont">
+    <div
+      class="card-cont"
+      on:touchstart="{touchstartHandler}"
+      on:touchend="{touchendHandler}">
       <!-- <Website website="{prevWebsite}" cl="prev" />
       <Website website="{currWebsite}" cl="curr" />
       <Website website="{nextWebsite}" cl="next" /> -->
@@ -106,6 +124,7 @@
     font-size: 3.75rem;
     font-weight: 400;
     letter-spacing: 0.12ch;
+    width: max-content;
   }
 
   .logo {
@@ -118,6 +137,7 @@
     display: flex;
     flex-direction: row;
     padding: 0;
+    flex-wrap: wrap;
   }
 
   .curr-link {
@@ -158,7 +178,7 @@
     position: relative;
     margin: 20px 10px;
     width: 60vw;
-    height: 60vh;
+    height: 29vw;
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
@@ -185,13 +205,66 @@
     transform: scale(2);
   }
 
+  @media (max-width: 850px) {
+    .App {
+      overflow-x: hidden;
+    }
+
+    .App-header {
+      margin: 20px auto;
+      font-size: 2.95rem;
+    }
+    .card-cont {
+      width: 82vw;
+      height: 40vw;
+    }
+
+    .shift-cont {
+      width: 82vw;
+      margin: 20px auto;
+      padding: 0 10%;
+    }
+
+    .curr-link {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .btn svg {
+      height: 20px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .App-header {
+      width: min-content;
+      font-size: 1.5rem;
+    }
+
+    .card-cont {
+      width: 78vw;
+      height: 39vw;
+    }
+
+    .shift-cont {
+      width: 76vw;
+      margin: 20px auto;
+      padding: 0 10%;
+    }
+  }
+
   :global(body) {
-    /* background-color: black; */
     background-color: #485461;
-    background-image: linear-gradient(315deg, #28313b 0%, #000000 74%);
-    padding: 0 30px;
+    background-image: linear-gradient(315deg, #181c20 0%, #000000 94%);
+    padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Lato", sans-serif;
   }
 

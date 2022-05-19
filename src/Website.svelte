@@ -20,7 +20,7 @@
     height: 100%;
     width: 100%;
     background-color: blue;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
     transform: translateX(calc(var(--order) * 100%));
