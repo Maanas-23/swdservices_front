@@ -19,7 +19,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: black;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
