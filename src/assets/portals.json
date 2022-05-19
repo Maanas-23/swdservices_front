@@ -1,0 +1,32 @@
+[
+  {
+    "name": "APOGEE Website",
+    "link": "https://bits-apogee.org",
+    "date": "April 2022",
+    "img": "Apogee.png"
+  },
+  {
+    "name": "Oasis Website",
+    "link": "https://bits-oasis.org",
+    "date": "Feb 2021",
+    "img": "Oasis.png"
+  },
+  {
+    "name": "DVM Portfolio",
+    "link": "https://bits-dvm.org",
+    "date": "April 2022",
+    "img": "Portfolio.png"
+  },
+  {
+    "name": "Rejoining Portal",
+    "link": "https://bits-apogee.org",
+    "date": "Dec 2021",
+    "img": "Rejoining.png"
+  },
+  {
+    "name": "Hostel Allocation Portal",
+    "link": "https://bits-apogee.org",
+    "date": "May 2022",
+    "img": ""
+  }
+]
