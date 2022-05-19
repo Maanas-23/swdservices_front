@@ -1,7 +1,7 @@
 <script lang="ts">
   import websites from "./assets/portals.json";
   import Website from "./Website.svelte";
-  import Logo from "./assets/img/DVM-Logo.svg";
+  import Logo from "./img/DVM-Logo.svg";
   let curr: number = 0;
   let currWebsite: WebsiteType = websites[curr];
 

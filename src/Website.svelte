@@ -2,7 +2,7 @@
   export let website: WebsiteType;
   export let websiteTransform: number;
   export let cl: string;
-  let src = `/src/assets/img/${website.img}`;
+  let src = `./img/${website.img}`;
 </script>
 
 <div class="Website {cl}">
