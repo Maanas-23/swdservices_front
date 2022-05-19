@@ -1,5 +1,17 @@
 [
   {
+    "name": "Hostel Allocation Portal",
+    "link": "https://swdservices.bits-pilani.ac.in/hostel-allocator",
+    "date": "May 2022",
+    "img": "Hostel.png"
+  },
+  {
+    "name": "Vaccination Portal",
+    "link": "https://swdservices.bits-pilani.ac.in/rejoining",
+    "date": "Dec 2021",
+    "img": "Rejoining.png"
+  },
+  {
     "name": "APOGEE Website",
     "link": "https://bits-apogee.org",
     "date": "April 2022",
@@ -16,17 +28,5 @@
     "link": "https://bits-dvm.org",
     "date": "April 2022",
     "img": "Portfolio.png"
-  },
-  {
-    "name": "Rejoining Portal",
-    "link": "https://bits-apogee.org",
-    "date": "Dec 2021",
-    "img": "Rejoining.png"
-  },
-  {
-    "name": "Hostel Allocation Portal",
-    "link": "https://bits-apogee.org",
-    "date": "May 2022",
-    "img": ""
   }
 ]
