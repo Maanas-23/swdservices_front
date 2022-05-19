@@ -215,14 +215,14 @@
       font-size: 2.95rem;
     }
     .card-cont {
-      width: 82vw;
-      height: 40vw;
+      width: 90vw;
+      height: 45vw;
     }
 
     .shift-cont {
-      width: 82vw;
+      width: 90vw;
       margin: 20px auto;
-      padding: 0 10%;
+      padding: 0 20%;
     }
 
     .curr-link {
@@ -254,6 +254,12 @@
 
     .shift-cont {
       width: 76vw;
+      margin: 20px auto;
+      padding: 0 10%;
+    }
+
+    .shift-cont {
+      width: 90vw;
       margin: 20px auto;
       padding: 0 10%;
     }
