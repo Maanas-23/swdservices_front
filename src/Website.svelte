@@ -1,41 +1,55 @@
 <script lang="ts">
   export let website: WebsiteType;
-  export let websiteTransform: number;
-  export let cl: string;
-  let src = `./img/${website.img}`;
 </script>
 
-<div class="Website {cl}">
-  {#key website.name}
-    <a href="{website.link}" target="_blank"
-      ><div class="card" style="{`--order: ${websiteTransform}`}">
-        <img src="{src}" alt="{`${website.name} Image`}" />
-      </div></a>
-  {/key}
+<div class="Website">
+  <a href={website.link} target="_blank">{website.name}</a>
+  <a href={website.link} target="_blank" class="btn">Go Here</a>
 </div>
 
 <style>
-  .Website .card {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
+  .Website {
+    background-color: white;
     padding: 20px;
-    box-sizing: border-box;
-    transform: translateX(calc(var(--order) * 100%));
-    transition: all ease-in-out 500ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
     padding: 0;
-    overflow: hidden;
   }
 
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .btn {
+    color: white;
+    background-color: #290475;
+    padding: 10px;
+    border-radius: 5px;
   }
 
-  .curr .card {
-    transform: translateX(0);
+  @media (max-width: 1000px) {
+    .Website {
+      padding: 10px;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+
+    .btn {
+      padding: 8px;
+      margin-left: 50px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    a {
+      font-size: 0.75rem;
+    }
   }
 </style>

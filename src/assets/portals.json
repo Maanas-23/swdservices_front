@@ -1,32 +1,18 @@
 [
   {
     "name": "Hostel Allocation Portal",
-    "link": "https://swdservices.bits-pilani.ac.in/hostel-allocator",
-    "date": "May 2022",
-    "img": "Hostel.png"
+    "link": "https://swdservices.bits-pilani.ac.in/hostel-allocator"
   },
   {
     "name": "Vaccination Portal",
-    "link": "https://swdservices.bits-pilani.ac.in/rejoining",
-    "date": "Dec 2021",
-    "img": "Rejoining.png"
+    "link": "https://swdservices.bits-pilani.ac.in/rejoining"
   },
   {
-    "name": "APOGEE Website",
-    "link": "https://bits-apogee.org",
-    "date": "April 2022",
-    "img": "Apogee.png"
+    "name": "Leave Portal",
+    "link": "https://academic.bits-pilani.ac.in/SWD/Student/Home.aspx"
   },
   {
-    "name": "Oasis Website",
-    "link": "https://bits-oasis.org",
-    "date": "Feb 2021",
-    "img": "Oasis.png"
-  },
-  {
-    "name": "DVM Portfolio",
-    "link": "https://bits-dvm.org",
-    "date": "April 2022",
-    "img": "Portfolio.png"
+    "name": "Time Table",
+    "link": "timetable.bits-dvm.org"
   }
 ]
