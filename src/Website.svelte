@@ -32,7 +32,7 @@
     border-radius: 5px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     .Website {
       padding: 10px;
     }

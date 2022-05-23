@@ -15,7 +15,13 @@
         <Website {website} />
       {/each}
     </div>
-    <div class="developer"><strong>Developers</strong> | DVM, BITS Pilani</div>
+    <div class="developer">
+      <strong
+        ><a href="https://swdservices.bits-pilani.ac.in/Developers"
+          >Developers</a
+        ></strong>
+      | <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
+    </div>
   </div>
   <div class="App-right">
     <div class="rightImg-cont">
@@ -49,6 +55,13 @@
     justify-content: center;
   }
 
+  :global(a) {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+  }
+
   .App {
     display: flex;
     width: 90vw;
@@ -76,7 +89,7 @@
   }
 
   .developer {
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: white;
     align-self: center;
   }
@@ -93,6 +106,7 @@
   }
 
   .App-right {
+    position: relative;
     display: flex;
     background-color: #f8f8ff;
     flex-direction: row;
@@ -111,7 +125,7 @@
     object-fit: contain;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     .App {
       flex-direction: column-reverse;
       height: auto;
