@@ -7,7 +7,7 @@ const htmlPlugin = () => {
     transformIndexHtml(html) {
       return html.replace(
         /<title>(.*?)<\/title>/,
-        `<title>DVM Portals</title>`
+        `<title>SWD Services | BITS Pilani</title>`
       )
     }
   }
