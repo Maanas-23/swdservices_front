@@ -3,6 +3,10 @@
   import Website from "./Website.svelte";
   import logoSrc from "./assets/img/BITS-logo.png";
   import imgSrc from "./assets/img/right.png";
+  // import hostel from "./assets/img/hostel.png"
+  // import leave from "./assets/img/leave.png"
+  // import briefcase from "./assets/img/briefcase.png"
+  // import syringe from "./assets/img/syringe.png"
 </script>
 
 <div class="App">
@@ -14,7 +18,7 @@
   </div>
   <div class="App-left">
     <div class="App-header">
-      <h1>Student Welfare Division <br/> Services</h1>
+      <h1>Student Welfare Division Services</h1>
     </div>
     <div class="Websites-cont">
       {#each websites as website}
@@ -55,10 +59,10 @@
     margin: 0;
     box-sizing: border-box;
   }
-
-  :global(body) {
-    height: 100vh;
+  :global(body){
+    height: auto;
   }
+
   .App-header-mobile{
     display: none;
   }
@@ -66,6 +70,7 @@
   :global(#app) {
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,13 +85,13 @@
     color: inherit;
   }
   .App-header>h1{
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 0.3rem;
   }
   .App {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
   }
 
@@ -94,7 +99,7 @@
     width: 60%;
     background-color: #290475;
     padding-inline: 6rem;
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -109,6 +114,7 @@
   .Websites-cont {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .developer {
@@ -147,7 +153,7 @@
       display: none;
       align-self: center;
       width: 50%;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
 
   .rightImg {
@@ -156,48 +162,36 @@
     object-fit: contain;
   }
 
+  @media (max-width: 1400px) {
+    .App-left{
+      padding-inline: 3rem;
+    }
+  }
+
   @media (max-width: 1100px) {
-    .App {
-      flex-direction: column;
-      height: 100%;
-      width: 100vw;
+    .App-left{
+      padding-inline: 3rem;
     }
-
-    .logo {
-      top: 0;
-      right: 10px;
+    .App-header>h1{
+      font-size: 3rem;
     }
-
-    .App-right {
-      /* height: 30vh; */
-      width: 100%;
+    .logo{
+      width: 25%;
     }
+  }
+  
 
+  @media (max-width: 860px) {
     .rightImg-cont {
       /* height: 80%; */
       width: 45%;
       align-self: flex-end;
     }
-
-    .App-left {
-      width: 100%;
-      padding: 15px;
-      align-items: center;
-    }
-
-    .Websites-cont {
-      margin: 20px 0;
-    }
-
-    h1 {
-      font-size: 2.25rem;
-    }
-
-  }
-
-  @media (max-width: 800px) {
     .App{
       justify-content: space-around;
+      flex-direction: column;
+      height: auto;
+      width: 100vw;
     }
     .logo {
       left: 11px;
@@ -214,7 +208,7 @@
       color: black;
       font-size: 1.5rem;
       letter-spacing: 0.01rem;
-      margin-top: 4rem;
+      margin-top: 6rem;
     }
     h1 {
       font-size: 1.2rem;
@@ -227,20 +221,22 @@
     }
     .rightImg-cont-mobile{
       display: block;
+      margin-top: 4rem;
     }
     .App-left{
       background-color: white;
+      padding-inline: 1rem;
+      width: 100%;
+      padding-top: 3rem;
     }
     .Websites-cont{
       background-color: #EAEFF2;
+      margin-bottom: 5rem;
     }
     .App-header > h1{
       color: black;
       font-size: 1.5rem;
       letter-spacing: 0.01rem;
-    }
-    .App-right {
-      /* height: 25vh; */
     }
     .developer-mobile{
       font-size: 1rem;

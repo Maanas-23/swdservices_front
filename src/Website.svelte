@@ -1,10 +1,32 @@
 <script lang="ts">
+  import "./assets/portals.json"
+  import hostel from "./assets/img/hostel.png";
+  import leave from "./assets/img/leave.png";
+  import briefcase from "./assets/img/briefcase.png";
+  import syringe from "./assets/img/syringe.png";
   export let website: WebsiteType;
+  let imgSrc=hostel;
+  switch (website.icon) {
+    case 1:
+      imgSrc=hostel
+      break;
+   case 2:
+      imgSrc=leave
+      break;
+   case 3:
+      imgSrc=syringe
+      break;
+   case 4:
+      imgSrc=briefcase
+      break;
+    default:
+      break;
+  }
 </script>
 
 <a class="Website" href={website.link} target="_blank">
-<a  class="website-cont">
-    <div class="imageCont"><img src={website.icon} /></div>
+<a  class="website-cont" href={website.link}>
+    <div class="imageCont"><img src={imgSrc} alt="imageHere"/></div>
     <div class="name">{website.name}</div>
   </a>
   </a>
@@ -38,12 +60,6 @@
   img {
     width: 80%;
   }
-  .btn {
-    color: white;
-    background-color: #290475;
-    padding: 10px;
-    border-radius: 5px;
-  }
   .name{
     font-weight: 600;
     font-size: 1.3rem;
@@ -51,22 +67,25 @@
     letter-spacing: 0.05rem;
   }
 
-  @media (max-width: 1100px) {
+  
+  @media (max-width: 1300px) {
     .Website {
       padding: 10px;
+      margin: 1.3rem;
     }
 
     a {
       font-size: 1rem;
     }
 
-    .btn {
-      padding: 8px;
-      margin-left: 50px;
+  }
+  @media (max-width: 380px){
+    .Website{
+      margin: 0.5rem !important;
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     a {
       font-size: 0.75rem;
     }
