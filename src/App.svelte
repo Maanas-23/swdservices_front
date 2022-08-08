@@ -6,9 +6,15 @@
 </script>
 
 <div class="App">
+  <div class="App-header-mobile">
+    <h1>Student Welfare Division <br/> Services</h1>
+  </div>
+  <div class="rightImg-cont-mobile">
+    <img src={imgSrc} alt="Right section" class="rightImg" />
+  </div>
   <div class="App-left">
     <div class="App-header">
-      <h1>SWD Services</h1>
+      <h1>Student Welfare Division <br/> Services</h1>
     </div>
     <div class="Websites-cont">
       {#each websites as website}
@@ -32,6 +38,13 @@
     <div class="triangle" id="triangle-3" />
   </div>
   <div class="logo"><img src={logoSrc} alt="BITS Logo" /></div>
+  <div class="developer-mobile">
+    <strong
+      ><a href="https://swdservices.bits-pilani.ac.in/Developers"
+        >Developers</a
+      ></strong>
+    | <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
+  </div>
 </div>
 
 <style>
@@ -46,6 +59,9 @@
   :global(body) {
     height: 100vh;
   }
+  .App-header-mobile{
+    display: none;
+  }
 
   :global(#app) {
     width: 100%;
@@ -54,25 +70,32 @@
     align-items: center;
     justify-content: center;
   }
-
+  .developer-mobile{
+    display: none;
+  }
   :global(a) {
     text-decoration: none;
     font-size: inherit;
     font-family: inherit;
     color: inherit;
   }
-
+  .App-header>h1{
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+  }
   .App {
     display: flex;
-    width: 90vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
   }
 
   .App-left {
     width: 60%;
     background-color: #290475;
-    padding: 100px 50px 50px;
+    padding-inline: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,24 +107,24 @@
   }
 
   .Websites-cont {
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .developer {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: white;
     align-self: center;
   }
 
   .logo {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
   }
 
   .logo img {
-    width: clamp(250px, 18vw, 400px);
+    width: 100%;
     height: auto;
   }
 
@@ -116,8 +139,16 @@
 
   .rightImg-cont {
     align-self: center;
-    width: 75%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }
+  .rightImg-cont-mobile{
+      display: none;
+      align-self: center;
+      width: 50%;
+      margin-top: 1rem;
+    }
 
   .rightImg {
     max-width: 100%;
@@ -127,9 +158,9 @@
 
   @media (max-width: 1100px) {
     .App {
-      flex-direction: column-reverse;
-      height: auto;
-      width: 80vw;
+      flex-direction: column;
+      height: 100%;
+      width: 100vw;
     }
 
     .logo {
@@ -138,19 +169,19 @@
     }
 
     .App-right {
-      height: 30vh;
+      /* height: 30vh; */
       width: 100%;
     }
 
     .rightImg-cont {
-      height: 80%;
-      width: auto;
+      /* height: 80%; */
+      width: 45%;
       align-self: flex-end;
     }
 
     .App-left {
       width: 100%;
-      padding: 25px 15px;
+      padding: 15px;
       align-items: center;
     }
 
@@ -162,31 +193,69 @@
       font-size: 2.25rem;
     }
 
-    .developer {
-      font-size: 0.8rem;
-    }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
+    .App{
+      justify-content: space-around;
+    }
     .logo {
-      left: 0;
-      top: 0;
+      left: 11px;
+    top: 0px;
+    width: 40%;
     }
-
+    .App-header{
+      display: none;
+    }
+    .App-header-mobile{
+      display: block;
+    }
+    .App-header-mobile >h1{
+      color: black;
+      font-size: 1.5rem;
+      letter-spacing: 0.01rem;
+      margin-top: 4rem;
+    }
     h1 {
-      font-size: 1.75rem;
+      font-size: 1.2rem;
+      
+      text-align: center;
     }
-
+    
     .rightImg-cont {
       display: none;
     }
-
-    .App-right {
-      height: 12vh;
+    .rightImg-cont-mobile{
+      display: block;
     }
-
+    .App-left{
+      background-color: white;
+    }
+    .Websites-cont{
+      background-color: #EAEFF2;
+    }
+    .App-header > h1{
+      color: black;
+      font-size: 1.5rem;
+      letter-spacing: 0.01rem;
+    }
+    .App-right {
+      /* height: 25vh; */
+    }
+    .developer-mobile{
+      font-size: 1rem;
+      background-color: #211D70;
+      padding-block: 0.5rem;
+      color: white;
+      text-align: center;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
     .developer {
-      font-size: 0.6rem;
+      display: none;
     }
   }
 </style>

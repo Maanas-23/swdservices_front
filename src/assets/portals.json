@@ -1,18 +1,22 @@
 [
   {
-    "name": "Hostel Allocation Portal",
-    "link": "https://hostelallocation.bits-dvm/hostelallocator"
+    "name": "Hostel Allocation",
+    "link": "https://hostelallocation.bits-dvm/hostelallocator",
+    "icon":  "../src/assets/img/hostel.png"
+  },
+  {
+    "name": "Leave Application",
+    "link": "https://swdservices.bits-pilani.ac.in/leave",
+    "icon": "../src/assets/img/leave.png"
   },
   {
     "name": "Vaccination Portal",
-    "link": "https://swdservices.bits-pilani.ac.in/rejoining"
-  },
-  {
-    "name": "Leave Portal",
-    "link": "https://swdservices.bits-pilani.ac.in/leave"
-  },
+    "link": "https://swdservices.bits-pilani.ac.in/rejoining",
+    "icon": "../src/assets/img/syringe.png"
+  }, 
   {
     "name": "Time Table",
-    "link": "https://timetable.bits-dvm.org"
+    "link": "https://timetable.bits-dvm.org",
+    "icon": "../src/assets/img/briefcase.png"
   }
 ]
