@@ -1,12 +1,12 @@
 [
   {
     "name": "Hostel Allocation",
-    "link": "https://hostelallocation.bits-dvm/hostelallocator",
+    "link": "https://hostelallocation.bits-dvm.org/hostelallocation",
     "icon":  1
   },
   {
     "name": "Leave Application",
-    "link": "https://swdservices.bits-pilani.ac.in/leave",
+    "link": "https://hostelallocation.bits-dvm.org/leave",
     "icon": 2
   },
   {
