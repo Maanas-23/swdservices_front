@@ -25,7 +25,7 @@
 </script>
 
 <a class="Website" href={website.link} target="_blank">
-<a  class="website-cont" href={website.link}>
+<a  class="website-cont" href={website.link} target="_blank">
     <div class="imageCont"><img src={imgSrc} alt="imageHere"/></div>
     <div class="name">{website.name}</div>
   </a>
