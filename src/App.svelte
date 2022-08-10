@@ -2,7 +2,7 @@
   import websites from "./assets/portals.json";
   import Website from "./Website.svelte";
   import logoSrc from "./assets/img/BITS-logo.png";
-  import imgSrc from "./assets/img/right.png";
+  import imgSrc from "./assets/img/right.svg";
 </script>
 
 <div class="App">
