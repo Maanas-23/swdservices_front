@@ -195,7 +195,7 @@
     }
     .logo {
       left: 11px;
-    top: 0px;
+    top: 18px;
     width: 40%;
     }
     .App-header{
@@ -221,17 +221,17 @@
     }
     .rightImg-cont-mobile{
       display: block;
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
     .App-left{
       background-color: white;
       padding-inline: 1rem;
       width: 100%;
-      padding-top: 3rem;
+      padding-top: 1rem;
     }
     .Websites-cont{
       background-color: #EAEFF2;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
     .App-header > h1{
       color: black;
