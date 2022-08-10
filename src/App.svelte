@@ -26,11 +26,7 @@
       {/each}
     </div>
     <div class="developer">
-      <strong
-        ><a href="https://hostelallocation.bits-dvm.org/hostelallocation/DevelopersPage"
-          >Developers</a
-        ></strong>
-      | <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
+       <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
     </div>
   </div>
   <div class="App-right">
@@ -43,11 +39,7 @@
   </div>
   <div class="logo"><img src={logoSrc} alt="BITS Logo" /></div>
   <div class="developer-mobile">
-    <strong
-      ><a href="https://hostelallocation.bits-dvm.org/hostelallocation/DevelopersPage"
-        >Developers</a
-      ></strong>
-    | <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
+    <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
   </div>
 </div>
 
