@@ -27,7 +27,7 @@
     </div>
     <div class="developer">
       <strong
-        ><a href="https://swdservices.bits-pilani.ac.in/Developers"
+        ><a href="https://hostelallocation.bits-dvm.org/hostelallocation/DevelopersPage"
           >Developers</a
         ></strong>
       | <a href="https://bits-dvm.org">DVM, BITS Pilani</a>
