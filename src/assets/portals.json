@@ -1,19 +1,19 @@
 [
   {
     "name": "Hostel Allocation",
-    "link": "https://hostelallocation.bits-dvm.org/hostelallocation",
-    "icon":  1
+    "link": "https://swdservices.bits-pilani.ac.in//hostelallocation",
+    "icon": 1
   },
   {
     "name": "Leave Application",
-    "link": "https://hostelallocation.bits-dvm.org/leave/login.html",
+    "link": "https://swdservices.bits-pilani.ac.in//leave/login.html",
     "icon": 2
   },
   {
     "name": "Vaccination Portal",
     "link": "https://swdservices.bits-pilani.ac.in/rejoining",
     "icon": 3
-  }, 
+  },
   {
     "name": "Time Table",
     "link": "https://timetable.bits-dvm.org",
