@@ -26,7 +26,7 @@
 
 <a class="Website" href={website.link} target="_blank">
 <a  class="website-cont" href={website.link} target="_blank">
-    <div class="imageCont"><img src={imgSrc} alt="imageHere"/></div>
+    <div class="imageCont"><img src={imgSrc} class="webImage" alt="imageHere"/></div>
     <div class="name">{website.name}</div>
   </a>
   </a>
@@ -34,7 +34,6 @@
 <style>
   .Website {
     background-color: white;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +46,12 @@
   .website-cont{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .imageCont{
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -66,11 +71,14 @@
     padding-top: 1rem;
     letter-spacing: 0.05rem;
   }
+  .webImage{
+    width: 35px;
+  }
 
   
   @media (max-width: 1300px) {
     .Website {
-      padding: 10px;
+      padding: 16px 10px;
       margin: 1.3rem;
     }
 
@@ -93,12 +101,14 @@
       margin: 1rem;
       box-shadow: 0px 1.67499px 5.02497px rgba(0, 0, 0, 0.2)
     }
+    .webImage{
+    width: 25px;
+  }
   }
 @media (max-width: 600px){
   .imageCont{
     width: 38%;
     /* align-self: center; */
-    margin-left: 15px;
   }
   .name{
     font-size: 0.7rem;
