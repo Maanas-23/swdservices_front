@@ -4,6 +4,7 @@
   import leave from "./assets/img/leave.png";
   import briefcase from "./assets/img/briefcase.png";
   import syringe from "./assets/img/syringe.png";
+  import details from "./assets/img/details.png";
   export let website: WebsiteType;
   let imgSrc=hostel;
   switch (website.icon) {
@@ -17,7 +18,7 @@
       imgSrc=syringe
       break;
    case 4:
-      imgSrc=hostel
+      imgSrc=details
       break;
     default:
       break;
