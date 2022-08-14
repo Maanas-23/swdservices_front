@@ -17,7 +17,7 @@
       imgSrc=syringe
       break;
    case 4:
-      imgSrc=briefcase
+      imgSrc=hostel
       break;
     default:
       break;
