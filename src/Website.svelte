@@ -3,7 +3,7 @@
   import hostel from "./assets/img/hostel.png";
   import leave from "./assets/img/leave.png";
   import briefcase from "./assets/img/briefcase.png";
-  import syringe from "./assets/img/syringe.png";
+  import ticket from "./assets/img/ticket.png";
   import details from "./assets/img/details.png";
   export let website: WebsiteType;
   let imgSrc=hostel;
@@ -15,7 +15,7 @@
       imgSrc=leave
       break;
    case 3:
-      imgSrc=syringe
+      imgSrc=ticket
       break;
    case 4:
       imgSrc=details
