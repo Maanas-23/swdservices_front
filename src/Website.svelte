@@ -71,6 +71,7 @@
     font-size: 1.3rem;
     padding-top: 1rem;
     letter-spacing: 0.05rem;
+    text-align: center;
   }
   .webImage{
     width: 35px;
@@ -113,6 +114,7 @@
   }
   .name{
     font-size: 0.7rem;
+    text-align: center;
   }
 }
 
